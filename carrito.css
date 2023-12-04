@@ -1,0 +1,261 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.3s;
+}
+
+header .logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Cambia el nombre del menú a "interfas" */
+.interfas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.interfas li {
+    display: inline-block;
+    position: relative;
+}
+
+.interfas li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Estilos para el menú desplegable menu-bici */
+.interfas .menu-bici{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.interfas .menu-bici li {
+    display: block;
+    text-align: left;
+}
+
+.interfas .menu-bici li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.interfas li:hover .menu-bici {
+    display: block;
+}
+
+/* Estilos para el menú desplegable E-bike */
+.interfas .e_biker{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.interfas .e_biker li {
+    display: block;
+    text-align: left;
+}
+
+.interfas .e_biker li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.interfas li:hover .e_biker {
+    display: block;
+}
+/* Estilos para el menú desplegable equipos */
+.interfas .equipos{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.interfas .equipos li {
+    display: block;
+    text-align: left;
+}
+
+.interfas .equipos li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+}
+.interfas li:hover .equipos{
+    display: block;
+}
+
+/* Estilos para el menú desplegable ofertas */
+.interfas .ofertas{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.interfas .ofertas li {
+    display: block;
+    text-align: left;
+}
+
+.interfas .ofertas li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.interfas li:hover .ofertas {
+    display: block;
+}
+/* Estilos para el icono del carrito y iniciar sesion */
+.carrito-session {
+    margin-right: 20px; 
+
+}
+
+.carrito-session a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.carrito-session i {
+    font-size: 1.5em; 
+    vertical-align: middle;
+}
+/* Estilos para el carrito */
+.cart-container {
+    width: 75%;
+    margin: 175px auto;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Agregado para centrar verticalmente */
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-right: -50px; 
+}
+
+
+.cart-header-Producto,
+.cart-header-Precio,
+.cart-header-Cantidad,
+.cart-header-Total {
+    flex: 1;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between; /* Cambiar a align-items para centrar verticalmente */
+    align-items: center; /* Agregado para centrar verticalmente */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+.cart-item img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cart-item-Producto,
+.cart-item-Precio,
+.cart-item-Cantidad,
+.cart-item-Total{
+    flex: 1;
+    padding: 0 10px;
+    text-align: center;
+}
+
+/* pago */
+.total-pagar {
+    width: 75%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagar {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

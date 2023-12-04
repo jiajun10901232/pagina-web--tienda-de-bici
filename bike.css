@@ -1,0 +1,185 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.3s;
+}
+
+header .logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Estilos para el menú interfas */
+.interfas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interfas li {
+    display: inline-block;
+    position: relative;
+}
+
+.interfas li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+ 
+/* Estilos para los menús desplegables */
+.interfas .menu-bici,
+.interfas .e_biker,
+.interfas .equipos,
+.interfas .ofertas {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    min-width: 100px;
+}
+
+.interfas .menu-bici li,
+.interfas .e_biker li,
+.interfas .equipos li,
+.interfas .ofertas li {
+    display: block;
+    text-align: left;
+}
+
+.interfas li:hover .menu-bici,
+.interfas li:hover .e_biker,
+.interfas li:hover .equipos,
+.interfas li:hover .ofertas {
+    display: block;
+}
+
+/* Estilos para el icono del carrito y iniciar sesion */
+.carrito-session {
+    margin-right: 20px; 
+
+}
+
+.carrito-session a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.carrito-session i {
+    font-size: 1.5em; 
+    vertical-align: middle;
+}
+
+/* Estilos para la sección de artículos */
+.articulos {
+    background-color: #f5f5f5;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.MTB,
+.Road,
+.Gravel,
+.Para_niños {
+    margin: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.articulo {
+    flex: 0 0 calc(30% - 50px);
+    /* Ajusta el ancho según sea necesario */
+    margin: 10px;
+    text-align: center;
+    /* Center the content within the button */
+}
+
+.articulo .articulo-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 20px;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.articulo .articulo-button img {
+    max-width: 100%;
+    height: auto;
+}
+
+.articulo .articulo-button h2,
+.articulo .articulo-button p {
+    margin: 10px 0;
+    /* Adjust the margin as needed */
+}
+
+.articulo .articulo-button:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,230 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.3s;
+}
+
+header .logo img {
+    max-width: 100px;
+    height: auto;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    margin-top: center;
+
+}
+
+.search {
+    margin-top: center;
+}
+
+
+
+/* menu interfas */
+.interfas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.interfas li {
+    display: inline-block;
+    position: relative;
+}
+
+.interfas li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Estilos para el menú desplegable menu-bici */
+.interfas .menu-bici{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.interfas .menu-bici li {
+    display: block;
+    text-align: left;
+}
+
+.interfas .menu-bici li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+}
+.interfas li:hover .menu-bici {
+    display: block;
+}
+
+/* Estilos para el menú desplegable E-bike */
+.interfas .e_biker{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.interfas .e_biker li {
+    display: block;
+    text-align: left;
+}
+
+.interfas .e_biker li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+}
+.interfas li:hover .e_biker {
+    display: block;
+}
+
+/* Estilos para el menú desplegable equipos */
+.interfas .equipos{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.interfas .equipos li {
+    display: block;
+    text-align: left;
+}
+
+.interfas .equipos li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+}
+.interfas li:hover .equipos{
+    display: block;
+}
+
+/* Estilos para el menú desplegable ofertas */
+.interfas .ofertas{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.interfas .ofertas li {
+    display: block;
+    text-align: left;
+}
+
+.interfas .ofertas li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+}
+.interfas li:hover .ofertas {
+    display: block;
+}
+
+/* Contenido principal */
+main {
+    text-align: center;
+    padding: 0px;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el icono del carrito y iniciar sesion */
+.carrito-session {
+    margin-right: 20px; 
+
+}
+
+.carrito-session a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.carrito-session i {
+    font-size: 1.5em; 
+    vertical-align: middle;
+}
+/*inicio de sesion*/
+.profile-container {
+    max-width: 400px;
+    margin: 250px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+/*pie de paguina*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
